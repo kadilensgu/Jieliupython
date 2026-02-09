@@ -1,0 +1,11 @@
+{
+    "version": "0.0.0",
+    "configurations": [
+        {
+            "name": "Python 启动",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "main.py"
+        }
+    ]
+}
