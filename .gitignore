@@ -1,4 +1,15 @@
-/__pycache__
-/build
-/dist
-main.spec
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 构建产物 & 打包文件
+/build/
+/dist/
+/*.spec
+
+# 额外建议（常见关联文件）
+*.log
+.DS_Store
+Thumbs.db
