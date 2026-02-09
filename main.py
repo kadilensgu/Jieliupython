@@ -4,9 +4,10 @@ from script import Script
 
 class Api:
     def submit_data(self, fromdata):
-        script = Script("示例脚本")
-        script.run(fromdata)
-        return {"status": "ok", "received": len(fromdata)}
+        print(fromdata)
+        # 类型
+        # script = Script("示例脚本")
+        # script.run(fromdata)
 
 
 def create_window():
