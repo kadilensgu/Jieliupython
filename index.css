@@ -6,25 +6,32 @@ form {
 	flex-wrap: wrap;
 }
 .form-row {
-	width: 150px;
-	height: 80px;
+	width: 200px;
+	height: 50px;
 	margin: 10px;
 	display: flex;
 	flex-direction: column;
 	justify-content: end;
 }
 
-.form-input input {
-	width: 100%;
-}
-
 .form-label {
-	line-height: 2;
 	text-align: center;
 }
 .form-input input {
 	width: 100%;
-	padding: 5px;
+	height: 30px;
+	padding: 0 5px;
 	outline: none;
-	color: #444;
+	color: #f700ff;
+	font-weight: bold;
+}
+
+.submit_section {
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+}
+.submit_section button {
+	padding: 10px 30px;
+	cursor: pointer;
 }

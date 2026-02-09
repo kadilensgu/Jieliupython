@@ -4,10 +4,12 @@ from script import Script
 
 class Api:
     def submit_data(self, fromdata):
-        print(fromdata)
-        # 类型
-        # script = Script("示例脚本")
-        # script.run(fromdata)
+        S = Script()
+        return S.run(fromdata)
+
+    def default_data(self):
+        S = Script()
+        return S.read_form_default_data()
 
 
 def create_window():
@@ -17,10 +19,11 @@ def create_window():
         "Modify Response Data",
         url="index.html",
         js_api=api,
-        width=800,
-        height=600,
+        width=1200,
+        height=800,
+        maximized=True,
     )
-    webview.start()
+    webview.start(icon="icon.ico")
 
 
 if __name__ == "__main__":
