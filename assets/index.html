@@ -45,11 +45,11 @@
 						</div>
 						<div class="form-row">
 							<div class="form-label">店铺发货及时率</div>
-							<div class="form-input"><input type="number" name="shpIntmRate" /></div>
+							<div class="form-input"><input type="number" name="shpIntmRate" step="0.001" /></div>
 						</div>
 						<div class="form-row">
 							<div class="form-label">店铺到货及时率</div>
-							<div class="form-input"><input type="number" name="dlvryIntmRate" /></div>
+							<div class="form-input"><input type="number" name="dlvryIntmRate" step="0.001" /></div>
 						</div>
 					</form>
 				</fieldset>
@@ -142,8 +142,8 @@
 			</div>
 
 			<div class="submit_section">
-				<label>浮动范围</label>
-				<div class="form-input"><input type="text" placeholder="例：10-50" value="10-50" id="rangeinput" /></div>
+				<label>倍数提升</label>
+				<div class="form-input"><input type="text" placeholder="例：1.2" value="1.2" id="rangeinput" /></div>
 				<button id="randomBtn">生成数据</button>
 				<button id="submitBtn">保存数据</button>
 			</div>

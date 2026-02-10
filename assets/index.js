@@ -66,7 +66,6 @@ function getContrastColors() {
 // 随机生成数据叠加
 document.getElementById('randomBtn').addEventListener('click', async () => {
 	var rangeinput = document.getElementById('rangeinput').value
-	rangeinput = rangeinput.split('-').map(item => parseInt(item.trim()))
 	var [bgColor, textColor] = getContrastColors()
 
 	//
@@ -75,8 +74,7 @@ document.getElementById('randomBtn').addEventListener('click', async () => {
 		if (inputNode.getAttribute('step') !== '0.001' && inputNode.type !== 'date') {
 			let currentValue = parseFloat(inputNode.value) || 0
 			//
-			var randomNum = Math.floor(Math.random() * (rangeinput[1] - rangeinput[0] + 1)) + rangeinput[0]
-			inputNode.value = currentValue + randomNum
+			inputNode.value = parseInt(currentValue * rangeinput)
 			//
 			inputNode.style.backgroundColor = bgColor
 			inputNode.style.color = textColor
