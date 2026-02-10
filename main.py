@@ -1,8 +1,8 @@
 import webview
 from script import Script
 
-# pyinstaller -F main.py  --icon=assets/icon.ico --add-data "assets;assets"
-# pyinstaller -F main.py --icon=assets/icon.ico --add-data "assets;assets" --noconsole
+# pyinstaller -F main.py -n Launch --icon=assets/icon.ico --add-data "assets;assets"
+# pyinstaller -F main.py -n Launch --icon=assets/icon.ico --add-data "assets;assets" --noconsole
 
 
 class Api:

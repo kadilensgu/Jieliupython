@@ -28,10 +28,23 @@ form {
 
 .submit_section {
 	margin-top: 20px;
+
 	display: flex;
-	justify-content: center;
+	gap: 20px;
+	align-items: center;
 }
 .submit_section button {
 	padding: 10px 30px;
 	cursor: pointer;
+}
+
+.download-link {
+	text-align: right;
+}
+.download-link a {
+	text-decoration: none;
+}
+.download-link a:hover {
+	text-decoration: underline;
+	text-underline-offset: 5px;
 }
