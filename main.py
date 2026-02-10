@@ -19,13 +19,13 @@ def create_window():
     window = webview.create_window(
         #
         "Modify Response Data",
-        url="./view/index.html",
+        url="./assets/index.html",
         js_api=api,
         width=1200,
         height=800,
-        maximized=True,
+        # maximized=True,
     )
-    webview.start()
+    webview.start(icon="./assets/icon.png")
 
 
 if __name__ == "__main__":

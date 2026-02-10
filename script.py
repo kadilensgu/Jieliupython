@@ -4,8 +4,8 @@ import json
 class Script:
 
     def __init__(self):
-        self.src_file = "reqable-rewrites.config.json"
-        self.dst_file = "1.json"
+        self.src_file = "reqable-rewrites.config"
+        self.dst_file = "reqable-rewrites.config"
 
     # 主入口：加载配置、更新配置、保存结果
     def run(self, formdata):
