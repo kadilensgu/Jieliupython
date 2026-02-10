@@ -1,7 +1,8 @@
 import webview
 from script import Script
 
-# python -m PyInstaller -F --add-data "assets;assets" main.py
+# pyinstaller -F main.py  --icon=assets/icon.ico --add-data "assets;assets"
+# pyinstaller -F main.py --icon=assets/icon.ico --add-data "assets;assets" --noconsole
 
 
 class Api:
@@ -25,7 +26,7 @@ def create_window():
         height=800,
         # maximized=True,
     )
-    webview.start(icon="./assets/icon.png")
+    webview.start()
 
 
 if __name__ == "__main__":
